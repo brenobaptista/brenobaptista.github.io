@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const card = ({ title, subtitle, link, tags, image }) => (
+const Card = ({ title, subtitle, link, tags, image }) => (
   <a href={link} target="_blank" rel="noopener noreferrer">
     <div className="card">
       <div className="card-content">
@@ -30,7 +30,7 @@ const card = ({ title, subtitle, link, tags, image }) => (
   </a>
 );
 
-card.propTypes = {
+Card.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   link: PropTypes.string,
@@ -38,10 +38,10 @@ card.propTypes = {
   image: PropTypes.node,
 };
 
-card.defaultProps = {
+Card.defaultProps = {
   link: null,
   tags: [],
   image: null,
 };
 
-export default card;
+export default Card;

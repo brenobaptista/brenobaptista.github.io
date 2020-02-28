@@ -1,84 +1,66 @@
-import { Link } from 'gatsby';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
-class Header extends Component {
-  state = {
-    isMenuOpen: false,
-  }
+const Header = ({ siteTitle }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  handleMenu = () => {
-    this.setState((previousState) => ({
-      isMenuOpen: !previousState.isMenuOpen,
-    }));
-  }
+  const burgerClass = isMenuOpen ? 'is-active' : '';
 
-  closeMenu = () => {
-    this.setState({
-      isMenuOpen: false,
-    });
-  }
-
-  render = () => {
-    const { siteTitle } = this.props;
-    const { isMenuOpen } = this.state;
-    const burgerClass = isMenuOpen ? 'is-active' : '';
-
-    return (
-      <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <Link to="/" className="navbar-item is-size-5">
-            {siteTitle}
-          </Link>
-          <button
-            className={`navbar-burger burger ${burgerClass}`}
-            type="button"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="myNavbar"
-            onClick={this.handleMenu}
+  return (
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <Link to="/" className="navbar-item is-size-5">
+          {siteTitle}
+        </Link>
+        <button
+          className={`navbar-burger burger ${burgerClass}`}
+          type="button"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="myNavbar"
+          onClick={() => setIsMenuOpen((state) => !state)}
+        >
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </button>
+      </div>
+      <div id="myNavbar" className={`navbar-menu ${burgerClass}`}>
+        <div className="navbar-end">
+          <Link
+            to="/"
+            className="navbar-item is-size-5"
+            onClick={() => setIsMenuOpen(false)}
           >
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-          </button>
+            HOME
+          </Link>
+          <Link
+            to="/projects/"
+            className="navbar-item is-size-5"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            PROJECTS
+          </Link>
+          <Link
+            to="/stack/"
+            className="navbar-item is-size-5"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            STACK
+          </Link>
+          <Link
+            to="/downloads/"
+            className="navbar-item is-size-5"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            DOWNLOADS
+          </Link>
         </div>
-        <div id="myNavbar" className={`navbar-menu ${burgerClass}`}>
-          <div className="navbar-end">
-            <Link
-              to="/"
-              className="navbar-item is-size-5"
-              onClick={this.closeMenu}
-            >
-              HOME
-            </Link>
-            <Link
-              to="/projects/"
-              className="navbar-item is-size-5"
-              onClick={this.closeMenu}
-            >
-              PROJECTS
-            </Link>
-            <Link
-              to="/stack/"
-              className="navbar-item is-size-5"
-              onClick={this.closeMenu}
-            >
-              STACK
-            </Link>
-            <Link
-              to="/downloads/"
-              className="navbar-item is-size-5"
-              onClick={this.closeMenu}
-            >
-              DOWNLOADS
-            </Link>
-          </div>
-        </div>
-      </nav>
-    );
-  }
-}
+      </div>
+    </nav>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

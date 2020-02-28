@@ -36,7 +36,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "gh-pages": "^2.2.0",
-    "prettier": "^1.18.2"
+    "husky": "^4.2.3"
   },
   "keywords": [
     "gatsby"
@@ -45,12 +45,16 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint src/",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public -b master"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint src/"
+    }
   },
   "repository": {
     "type": "git",
