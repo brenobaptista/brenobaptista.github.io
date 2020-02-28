@@ -1,9 +1,10 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Helmet from "react-helmet"
+import React from 'react';
+import Helmet from 'react-helmet';
 
-const stack = () => (
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+
+const Stack = () => (
   <Layout>
     <SEO title="Stack" />
     <Helmet>
@@ -11,7 +12,7 @@ const stack = () => (
         async
         src="https://cdn1.stackshare.io/javascripts/client-code.js"
         charset="utf-8"
-      ></script>
+      />
     </Helmet>
     <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
       <div className="hero-body">
@@ -35,6 +36,6 @@ const stack = () => (
       </div>
     </section>
   </Layout>
-)
+);
 
-export default stack
+export default Stack;

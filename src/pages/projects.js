@@ -1,12 +1,13 @@
-import React, { useEffect } from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Card from "../components/card"
-import PropTypes from "prop-types"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import "../../node_modules/aos/dist/aos.css"
-import AOS from "aos"
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import '../../node_modules/aos/dist/aos.css';
+import AOS from 'aos';
+
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import Card from '../components/Card';
 
 export const queryImage = graphql`
   query {
@@ -88,12 +89,12 @@ export const queryImage = graphql`
       }
     }
   }
-`
+`;
 
-const projects = ({ data }) => {
+const Projects = ({ data }) => {
   useEffect(() => {
-    AOS.init()
-  })
+    AOS.init();
+  });
 
   return (
     <Layout>
@@ -105,7 +106,8 @@ const projects = ({ data }) => {
           </h1>
           <hr className="custom-hr2" />
           <p className="has-text-centered">
-            See more projects on my{" "}
+            See more projects on my
+            {' '}
             <a href="https://github.com/brenobaptista">GitHub</a>
           </p>
         </div>
@@ -118,16 +120,16 @@ const projects = ({ data }) => {
                 title="LibreTutor"
                 subtitle="LibreTutor - Connecting Tutors and Pupils"
                 link="https://github.com/libretutor"
-                tags={["Full Stack", "Node", "React Native", "Maps"]}
-                image={
+                tags={['Full Stack', 'Node', 'React Native', 'Maps']}
+                image={(
                   <Img
                     fixed={data.libretutor.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: "10%"
+                      borderRadius: '10%',
                     }}
                     alt="libretutor"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -135,16 +137,16 @@ const projects = ({ data }) => {
                 title="Pomodoro"
                 subtitle="Pomodoro App (iOS and Android)"
                 link="https://github.com/brenobaptista/pomodoro-react-native"
-                tags={["React Native", "Redux", "Unit Testing"]}
-                image={
+                tags={['React Native', 'Redux', 'Unit Testing']}
+                image={(
                   <Img
                     fixed={data.pomodoro.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: "10%"
+                      borderRadius: '10%',
                     }}
                     alt="pomodoro"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -152,14 +154,16 @@ const projects = ({ data }) => {
                 title="Aeon Planner"
                 subtitle="Personal Planner React PWA"
                 link="https://aeonplanner.netlify.com/"
-                tags={["PWA", "React", "Redux", "Node", "Full Stack"]}
-                image={
-                  <Img fixed={data.aeon.childImageSharp.fixed} 
-                  imgStyle={{
-                    borderRadius: "10%"
-                  }}
-                  alt="aeon" />
-                }
+                tags={['PWA', 'React', 'Redux', 'Node', 'Full Stack']}
+                image={(
+                  <Img
+                    fixed={data.aeon.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: '10%',
+                    }}
+                    alt="aeon"
+                  />
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -167,16 +171,16 @@ const projects = ({ data }) => {
                 title="Spectacles Finances"
                 subtitle="My Personal Finance App (iOS and Android)"
                 link="https://github.com/brenobaptista/spectacles-finances-react-native"
-                tags={["React Native", "Firebase", "Expo"]}
-                image={
+                tags={['React Native', 'Firebase', 'Expo']}
+                image={(
                   <Img
                     fixed={data.spectacles.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: "10%"
+                      borderRadius: '10%',
                     }}
                     alt="spectacles"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -184,16 +188,16 @@ const projects = ({ data }) => {
                 title="iOS Calculator"
                 subtitle="iOS Calculator clone (iOS and Android)"
                 link="https://github.com/brenobaptista/ios-calculator-react-native"
-                tags={["React Native", "Expo", "iOS Design"]}
-                image={
+                tags={['React Native', 'Expo', 'iOS Design']}
+                image={(
                   <Img
                     fixed={data.calculator.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: "10%"
+                      borderRadius: '10%',
                     }}
                     alt="calculator"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -201,16 +205,16 @@ const projects = ({ data }) => {
                 title="BTS Brindes"
                 subtitle="Gifts that make you sell more!"
                 link="https://btsbrindes.com.br"
-                tags={["Ecommerce, WooCommerce"]}
-                image={
+                tags={['Ecommerce, WooCommerce']}
+                image={(
                   <Img
                     fixed={data.bts.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: "10%"
+                      borderRadius: '10%',
                     }}
                     alt="bts brindes"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -218,16 +222,16 @@ const projects = ({ data }) => {
                 title="Semana Universitária"
                 subtitle="Academic Week 2019 - UECE"
                 link="https://semanauniversitaria2019.uece.br"
-                tags={["HTML", "CSS", "Bootstrap", "JavaScript"]}
-                image={
+                tags={['HTML', 'CSS', 'Bootstrap', 'JavaScript']}
+                image={(
                   <Img
                     fixed={data.semanauniversitaria.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: "10%"
+                      borderRadius: '10%',
                     }}
                     alt="semana universitaria"
                   />
-                }
+                )}
               />
             </div>
           </div>
@@ -250,14 +254,16 @@ const projects = ({ data }) => {
                 title="Parrot Mercantil"
                 subtitle="Online grocery store in Sobral"
                 link="https://parrotmercantil.com.br"
-                tags={["Scrum", "Project Management"]}
-                image={
-                  <Img fixed={data.parrot.childImageSharp.fixed}
-                  imgStyle={{
-                    borderRadius: "10%"
-                  }}
-                  alt="parrot" />
-                }
+                tags={['Scrum', 'Project Management']}
+                image={(
+                  <Img
+                    fixed={data.parrot.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: '10%',
+                    }}
+                    alt="parrot"
+                  />
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -265,14 +271,16 @@ const projects = ({ data }) => {
                 title="ANMAP"
                 subtitle="The best rubbers, plastics and metals!"
                 link="http://anmap.com.br"
-                tags={["Scrum", "Project Management"]}
-                image={
-                  <Img fixed={data.anmap.childImageSharp.fixed}
-                  imgStyle={{
-                    borderRadius: "10%"
-                  }}
-                  alt="anmap" />
-                }
+                tags={['Scrum', 'Project Management']}
+                image={(
+                  <Img
+                    fixed={data.anmap.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: '10%',
+                    }}
+                    alt="anmap"
+                  />
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -280,14 +288,16 @@ const projects = ({ data }) => {
                 title="Unijus Jr."
                 subtitle="Law junior enterprise"
                 link="http://unijusjr.com.br"
-                tags={["Scrum", "Project Management"]}
-                image={
-                  <Img fixed={data.unijus.childImageSharp.fixed}
-                  imgStyle={{
-                    borderRadius: "10%"
-                  }}
-                  alt="unijus" />
-                }
+                tags={['Scrum', 'Project Management']}
+                image={(
+                  <Img
+                    fixed={data.unijus.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: '10%',
+                    }}
+                    alt="unijus"
+                  />
+                )}
               />
             </div>
           </div>
@@ -308,16 +318,16 @@ const projects = ({ data }) => {
                 title="Manjaro i3"
                 subtitle="Recommended software for Mi3"
                 link="https://github.com/brenobaptista/software-manjaro-i3"
-                tags={["Linux", "Manjaro", "Arch Linux"]}
-                image={
+                tags={['Linux', 'Manjaro', 'Arch Linux']}
+                image={(
                   <Img
                     fixed={data.manjaro.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: "10%"
+                      borderRadius: '10%',
                     }}
                     alt="manjaro i3"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -325,16 +335,16 @@ const projects = ({ data }) => {
                 title="Manjaro i3 - Troubleshooting"
                 subtitle="Manjaro i3 common problems"
                 link="https://github.com/brenobaptista/troubleshooting-manjaro-i3"
-                tags={["Linux", "Manjaro", "Arch Linux", "Troubleshooting"]}
-                image={
+                tags={['Linux', 'Manjaro', 'Arch Linux', 'Troubleshooting']}
+                image={(
                   <Img
                     fixed={data.manjaro.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: "10%"
+                      borderRadius: '10%',
                     }}
                     alt="manjaro i3 troubleshooting"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="zoom-in-up">
@@ -342,27 +352,27 @@ const projects = ({ data }) => {
                 title="Manjaro KDE"
                 subtitle="Recommended software for Manjaro KDE"
                 link="https://github.com/brenobaptista/software-manjaro-kde"
-                tags={["Linux", "Manjaro", "Arch Linux"]}
-                image={
+                tags={['Linux', 'Manjaro', 'Arch Linux']}
+                image={(
                   <Img
                     fixed={data.manjaro.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: "10%"
+                      borderRadius: '10%',
                     }}
                     alt="manjaro kde"
                   />
-                }
+                )}
               />
             </div>
           </div>
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-projects.propTypes = {
+Projects.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default projects
+export default Projects;

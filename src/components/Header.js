@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React, { Component } from "react"
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 
 class Header extends Component {
   state = {
@@ -8,19 +8,21 @@ class Header extends Component {
   }
 
   handleMenu = () => {
-    this.setState(previousState => ({
+    this.setState((previousState) => ({
       isMenuOpen: !previousState.isMenuOpen,
-    }))
+    }));
   }
 
   closeMenu = () => {
-    this.setState({ isMenuOpen: false })
+    this.setState({
+      isMenuOpen: false,
+    });
   }
 
   render = () => {
-    const { siteTitle } = this.props
-    const { isMenuOpen } = this.state
-    const burgerClass = isMenuOpen ? "is-active" : ""
+    const { siteTitle } = this.props;
+    const { isMenuOpen } = this.state;
+    const burgerClass = isMenuOpen ? 'is-active' : '';
 
     return (
       <nav className="navbar" role="navigation" aria-label="main navigation">
@@ -28,21 +30,19 @@ class Header extends Component {
           <Link to="/" className="navbar-item is-size-5">
             {siteTitle}
           </Link>
-
-          <a
-            role="button"
+          <button
             className={`navbar-burger burger ${burgerClass}`}
+            type="button"
             aria-label="menu"
             aria-expanded="false"
             data-target="myNavbar"
             onClick={this.handleMenu}
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+          </button>
         </div>
-
         <div id="myNavbar" className={`navbar-menu ${burgerClass}`}>
           <div className="navbar-end">
             <Link
@@ -76,16 +76,16 @@ class Header extends Component {
           </div>
         </div>
       </nav>
-    )
+    );
   }
 }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: '',
+};
 
-export default Header
+export default Header;

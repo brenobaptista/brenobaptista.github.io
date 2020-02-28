@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const card = ({ title, subtitle, link, tags, image }) => (
-  <a href={link} target="_blank">
+  <a href={link} target="_blank" rel="noopener noreferrer">
     <div className="card">
       <div className="card-content">
         <div className="media">
@@ -17,7 +17,7 @@ const card = ({ title, subtitle, link, tags, image }) => (
               {subtitle}
             </p>
             <div className="tags">
-              {tags.map(tag => (
+              {tags.map((tag) => (
                 <span className="tag" key={tag}>
                   {tag}
                 </span>
@@ -28,7 +28,7 @@ const card = ({ title, subtitle, link, tags, image }) => (
       </div>
     </div>
   </a>
-)
+);
 
 card.propTypes = {
   title: PropTypes.string.isRequired,
@@ -36,12 +36,12 @@ card.propTypes = {
   link: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string),
   image: PropTypes.node,
-}
+};
 
 card.defaultProps = {
   link: null,
   tags: [],
   image: null,
-}
+};
 
-export default card
+export default card;

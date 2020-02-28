@@ -1,12 +1,13 @@
-import React, { useEffect } from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Card from "../components/card"
-import PropTypes from "prop-types"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import "../../node_modules/aos/dist/aos.css"
-import AOS from "aos"
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import AOS from 'aos';
+import '../../node_modules/aos/dist/aos.css';
+
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import Card from '../components/Card';
 
 export const queryImage = graphql`
   query {
@@ -46,12 +47,12 @@ export const queryImage = graphql`
       }
     }
   }
-`
+`;
 
-const test = ({ data }) => {
+const Downloads = ({ data }) => {
   useEffect(() => {
-    AOS.init()
-  })
+    AOS.init();
+  });
 
   return (
     <Layout>
@@ -70,13 +71,13 @@ const test = ({ data }) => {
                 title="Free Ebook (in Portuguese)"
                 subtitle="The Eagle Negotiator's Guide - Coauthor: Angeliano Sousa"
                 link="https://drive.google.com/open?id=1EyaNsn_rpdBki7S5lalSI9l73u-QUKBb"
-                tags={["Ebook", "Angeliano Sousa"]}
-                image={
+                tags={['Ebook', 'Angeliano Sousa']}
+                image={(
                   <Img
                     fixed={data.ebookaguia.childImageSharp.fixed}
                     alt="free ebook"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="flip-down">
@@ -84,13 +85,13 @@ const test = ({ data }) => {
                 title="Curriculum Vitae"
                 subtitle="My latest curriculum vitae"
                 link="https://drive.google.com/open?id=1Slk2GoK6w3KKt-eNdWdYyYEA3J6mM1rH"
-                tags={["Curriculum Vitae"]}
-                image={
+                tags={['Curriculum Vitae']}
+                image={(
                   <Img
                     fixed={data.curriculumvitae.childImageSharp.fixed}
                     alt="curriculum vitae"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="flip-down">
@@ -98,7 +99,7 @@ const test = ({ data }) => {
                 title="Medals"
                 subtitle="Science Olympiads Medals"
                 link="https://drive.google.com/open?id=1MvF6eOMCpa7Xs1-Jk2g6WwEycGwC3YN-"
-                tags={["Medals", "Science Olympiads"]}
+                tags={['Medals', 'Science Olympiads']}
                 image={
                   <Img fixed={data.medals.childImageSharp.fixed} alt="medals" />
                 }
@@ -109,13 +110,13 @@ const test = ({ data }) => {
                 title="High School Certificates"
                 subtitle="Science Olympiads Certificates"
                 link="https://drive.google.com/open?id=1AEKeTtAQSQzmZx1_TlNAbKO22yAipaml"
-                tags={["Certificates", "Science Olympiads"]}
-                image={
+                tags={['Certificates', 'Science Olympiads']}
+                image={(
                   <Img
                     fixed={data.certificates.childImageSharp.fixed}
                     alt="certificates"
                   />
-                }
+                )}
               />
             </div>
             <div data-aos="flip-down">
@@ -123,24 +124,24 @@ const test = ({ data }) => {
                 title="Certificates"
                 subtitle="College Certificates"
                 link="https://drive.google.com/open?id=17bfdvAJm00vJgqQwRiNsJ0zyRgLIGz0v"
-                tags={["Certificates"]}
-                image={
+                tags={['Certificates']}
+                image={(
                   <Img
                     fixed={data.certificates2.childImageSharp.fixed}
                     alt="free ebook"
                   />
-                }
+                )}
               />
             </div>
           </div>
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-test.propTypes = {
+Downloads.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default test
+export default Downloads;

@@ -17,3 +17,9 @@
 .paragraph {
   text-indent: 50px;
 }
+
+// Overwrite defaul navbar-burger from Bulma
+.navbar-burger {
+  border: 0;
+  background-color: transparent;
+}
