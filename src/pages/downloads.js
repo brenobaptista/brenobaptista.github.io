@@ -84,7 +84,7 @@ const Downloads = ({ data }) => {
               <Card
                 title="Curriculum Vitae"
                 subtitle="My latest curriculum vitae"
-                link="https://drive.google.com/open?id=1Slk2GoK6w3KKt-eNdWdYyYEA3J6mM1rH"
+                link="https://drive.google.com/open?id=1MAAqz7jJmALj78pWShX3GU6N3Xi-Jpcd"
                 tags={['Curriculum Vitae']}
                 image={(
                   <Img

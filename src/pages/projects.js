@@ -11,7 +11,14 @@ import Card from '../components/Card';
 
 export const queryImage = graphql`
   query {
-    libretutor: file(relativePath: { eq: "libretutor.png" }) {
+    husky: file(relativePath: { eq: "husky.png" }) {
+      childImageSharp {
+        fixed(width: 96, height: 96) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    libretutors: file(relativePath: { eq: "libretutors.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
@@ -117,23 +124,6 @@ const Projects = ({ data }) => {
           <div className="column is-half">
             <div data-aos="zoom-in-up">
               <Card
-                title="LibreTutor"
-                subtitle="LibreTutor - Connecting Tutors and Pupils"
-                link="https://github.com/libretutor"
-                tags={['Full Stack', 'Node', 'React Native', 'Maps']}
-                image={(
-                  <Img
-                    fixed={data.libretutor.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="libretutor"
-                  />
-                )}
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
                 title="Pomodoro"
                 subtitle="Pomodoro App (iOS and Android)"
                 link="https://github.com/brenobaptista/pomodoro-react-native"
@@ -145,23 +135,6 @@ const Projects = ({ data }) => {
                       borderRadius: '10%',
                     }}
                     alt="pomodoro"
-                  />
-                )}
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Aeon Planner"
-                subtitle="Personal Planner React PWA"
-                link="https://aeonplanner.netlify.com/"
-                tags={['PWA', 'React', 'Redux', 'Node', 'Full Stack']}
-                image={(
-                  <Img
-                    fixed={data.aeon.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="aeon"
                   />
                 )}
               />
@@ -196,6 +169,40 @@ const Projects = ({ data }) => {
                       borderRadius: '10%',
                     }}
                     alt="calculator"
+                  />
+                )}
+              />
+            </div>
+            <div data-aos="zoom-in-up">
+              <Card
+                title="LibreTutors"
+                subtitle="LibreTutors - Connecting Tutors and Pupils"
+                link="https://github.com/brenobaptista/libretutors-react-native"
+                tags={['Full Stack', 'Node', 'React Native', 'Maps']}
+                image={(
+                  <Img
+                    fixed={data.libretutors.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: '10%',
+                    }}
+                    alt="libretutors"
+                  />
+                )}
+              />
+            </div>
+            <div data-aos="zoom-in-up">
+              <Card
+                title="Aeon Planner"
+                subtitle="Personal Planner React PWA"
+                link="https://aeonplanner.netlify.com/"
+                tags={['PWA', 'React', 'Redux', 'Node', 'Full Stack']}
+                image={(
+                  <Img
+                    fixed={data.aeon.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: '10%',
+                    }}
+                    alt="aeon"
                   />
                 )}
               />
@@ -313,6 +320,23 @@ const Projects = ({ data }) => {
       <section className="section is-size-4-desktop is-size-5-touch">
         <div className="columns is-centered">
           <div className="column is-half">
+            <div data-aos="zoom-in-up">
+              <Card
+                title="Husky + ESLint"
+                subtitle="Integrating Husky and ESLint"
+                link="https://github.com/brenobaptista/husky-eslint"
+                tags={['Husky', 'ESLint']}
+                image={(
+                  <Img
+                    fixed={data.husky.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: '10%',
+                    }}
+                    alt="husky eslint"
+                  />
+                )}
+              />
+            </div>
             <div data-aos="zoom-in-up">
               <Card
                 title="Manjaro i3"

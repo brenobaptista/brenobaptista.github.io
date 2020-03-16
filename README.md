@@ -1,25 +1,35 @@
-# This is my personal website/portfolio.
+# brenobaptista.github.io
 
-## 🚀 Quick start
+> My personal portfolio website made using Gatsby.
 
-1.  **Create a Gatsby site.**
-Use the Gatsby CLI to create a new site, specifying the default starter.
+## Features
 
-```sh
-# create a new Gatsby site using the default starter
-gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+* Gatsby and all its features.
+* Bulma.
+* gh-pages.
+* ESLint + Husky.
+* PWA support.
+* 100% Score PageSpeed Insights.
+
+## Getting Started
+
+```
+Install dependencies:
+$ yarn
+
+Serve with hot reload at localhost:8000
+$ yarn start
+
+Build for production and generate static project
+$ yarn deploy
 ```
 
-2. **Install dependencies**
-npm install
+## Author
 
-3. **Start developing.**
-Navigate into your new site’s directory and start it up.
+| [![brenobaptista](https://avatars1.githubusercontent.com/u/47641641?s=120&v=4)](https://github.com/brenobaptista) |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Breno Baptista](https://github.com/brenobaptista) |
 
-```sh
-cd my-default-starter/
-gatsby develop
-```
+## License
 
-4.  **Open the source code and start editing!**
-Your site is now running at `http://localhost:8000`!
+This project is licensed under the [MIT License](/LICENSE)
