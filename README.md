@@ -9,7 +9,7 @@
 * gh-pages.
 * ESLint + Husky.
 * PWA support.
-* 100% Score PageSpeed Insights.
+* High Score PageSpeed Insights.
 
 ## Getting Started
 

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './Header';
-import '../styles/layout.scss';
 import '../styles/index.scss';
 
 const Layout = ({ children }) => {
@@ -19,8 +18,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <Header siteTitle="BRENO BAPTISTA" />
+      <Header />
       <div>
         <main>{children}</main>
         <footer className="has-text-centered">

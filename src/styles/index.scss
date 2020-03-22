@@ -1,15 +1,21 @@
-@import "./fonts.scss";
-@import "./theme.scss";
-@import "./custom-hr.scss";
 @import "./card.scss";
+@import "./custom-hr.scss";
+@import "./drawerToggle.scss";
 @import "./etc.scss";
+@import "./fonts.scss";
+@import "./logo.scss";
+@import "./navigationItem.scss";
+@import "./navigationItems.scss";
+@import "./sideDrawer.scss";
+@import "./theme.scss";
+@import "./toolbar.scss";
 
 // To import all of Bulma:
 // @import "~bulma/bulma";
 
 // To import just the requered styles:
-@import '~bulma/sass/utilities/_all'; // sass-lint:disable-line clean-import-paths
-@import '~bulma/sass/base/_all'; // sass-lint:disable-line clean-import-paths
+@import '~bulma/sass/utilities/_all';
+@import '~bulma/sass/base/_all';
 @import '~bulma/sass/elements/container';
 @import '~bulma/sass/elements/content';
 @import '~bulma/sass/elements/icon';
@@ -18,7 +24,6 @@
 @import '~bulma/sass/elements/tag';
 @import '~bulma/sass/layout/section';
 @import '~bulma/sass/layout/hero';
-@import '~bulma/sass/components/navbar';
 @import '~bulma/sass/components/card';
 @import '~bulma/sass/components/media';
 @import '~bulma/sass/grid/columns';
