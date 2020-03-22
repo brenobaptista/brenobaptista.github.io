@@ -11,6 +11,7 @@ const drawerToggle = (props) => {
       onKeyPress={clicked}
       role="button"
       tabIndex="0"
+      aria-label="toggle sidedrawer"
     >
       <div />
       <div />
