@@ -11,35 +11,7 @@ import Card from '../components/Card';
 
 export const queryImage = graphql`
   query {
-    husky: file(relativePath: { eq: "husky.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    libretutors: file(relativePath: { eq: "libretutors.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    bts: file(relativePath: { eq: "bts.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
     pomodoro: file(relativePath: { eq: "pomodoro.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    calculator: file(relativePath: { eq: "calculator.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
@@ -53,21 +25,14 @@ export const queryImage = graphql`
         }
       }
     }
-    semanauniversitaria: file(relativePath: { eq: "semanauniversitaria.png" }) {
+    calculator: file(relativePath: { eq: "calculator.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    manjaro: file(relativePath: { eq: "manjaro.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    anmap: file(relativePath: { eq: "anmap.png" }) {
+    libretutors: file(relativePath: { eq: "libretutors.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
@@ -75,20 +40,6 @@ export const queryImage = graphql`
       }
     }
     aeon: file(relativePath: { eq: "aeon.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    parrot: file(relativePath: { eq: "parrot.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    unijus: file(relativePath: { eq: "unijus.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
@@ -109,7 +60,7 @@ const Projects = ({ data }) => {
       <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
         <div className="hero-body">
           <h1 className="title has-text-centered has-text-light">
-            Projects as a Developer
+            Projects
           </h1>
           <hr className="custom-hr2" />
           <p className="has-text-centered">
@@ -203,187 +154,6 @@ const Projects = ({ data }) => {
                       borderRadius: '10%',
                     }}
                     alt="aeon"
-                  />
-                )}
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="BTS Brindes"
-                subtitle="Gifts that make you sell more!"
-                link="https://btsbrindes.com.br"
-                tags={['Ecommerce, WooCommerce']}
-                image={(
-                  <Img
-                    fixed={data.bts.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="bts brindes"
-                  />
-                )}
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Semana Universitária"
-                subtitle="Academic Week 2019 - UECE"
-                link="https://semanauniversitaria2019.uece.br"
-                tags={['HTML', 'CSS', 'Bootstrap', 'JavaScript']}
-                image={(
-                  <Img
-                    fixed={data.semanauniversitaria.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="semana universitaria"
-                  />
-                )}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
-        <div className="hero-body">
-          <h1 className="title has-text-centered has-text-light">
-            Projects as a Project Manager
-          </h1>
-          <hr className="custom-hr4" />
-        </div>
-      </section>
-      <section className="section is-size-4-desktop is-size-5-touch">
-        <div className="columns is-centered">
-          <div className="column is-half">
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Parrot Mercantil"
-                subtitle="Online grocery store in Sobral"
-                link="https://parrotmercantil.com.br"
-                tags={['Scrum', 'Project Management']}
-                image={(
-                  <Img
-                    fixed={data.parrot.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="parrot"
-                  />
-                )}
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="ANMAP"
-                subtitle="The best rubbers, plastics and metals!"
-                link="http://anmap.com.br"
-                tags={['Scrum', 'Project Management']}
-                image={(
-                  <Img
-                    fixed={data.anmap.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="anmap"
-                  />
-                )}
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Unijus Jr."
-                subtitle="Law junior enterprise"
-                link="http://unijusjr.com.br"
-                tags={['Scrum', 'Project Management']}
-                image={(
-                  <Img
-                    fixed={data.unijus.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="unijus"
-                  />
-                )}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
-        <div className="hero-body">
-          <h1 className="title has-text-centered has-text-light">Guides</h1>
-          <hr className="custom-hr5" />
-        </div>
-      </section>
-      <section className="section is-size-4-desktop is-size-5-touch">
-        <div className="columns is-centered">
-          <div className="column is-half">
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Husky + ESLint"
-                subtitle="Integrating Husky and ESLint"
-                link="https://github.com/brenobaptista/husky-eslint"
-                tags={['Husky', 'ESLint']}
-                image={(
-                  <Img
-                    fixed={data.husky.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="husky eslint"
-                  />
-                )}
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Manjaro i3"
-                subtitle="Recommended software for Mi3"
-                link="https://github.com/brenobaptista/software-manjaro-i3"
-                tags={['Linux', 'Manjaro', 'Arch Linux']}
-                image={(
-                  <Img
-                    fixed={data.manjaro.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="manjaro i3"
-                  />
-                )}
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Manjaro i3 - Troubleshooting"
-                subtitle="Manjaro i3 common problems"
-                link="https://github.com/brenobaptista/troubleshooting-manjaro-i3"
-                tags={['Linux', 'Manjaro', 'Arch Linux', 'Troubleshooting']}
-                image={(
-                  <Img
-                    fixed={data.manjaro.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="manjaro i3 troubleshooting"
-                  />
-                )}
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Manjaro KDE"
-                subtitle="Recommended software for Manjaro KDE"
-                link="https://github.com/brenobaptista/software-manjaro-kde"
-                tags={['Linux', 'Manjaro', 'Arch Linux']}
-                image={(
-                  <Img
-                    fixed={data.manjaro.childImageSharp.fixed}
-                    imgStyle={{
-                      borderRadius: '10%',
-                    }}
-                    alt="manjaro kde"
                   />
                 )}
               />

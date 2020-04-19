@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import { Link, StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faAddressCard, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '../../node_modules/aos/dist/aos.css';
 import AOS from 'aos';
 
@@ -57,23 +57,13 @@ const IndexPage = () => {
           </h2>
           <div className="has-text-centered">
             <a
-              href="https://drive.google.com/open?id=1MAAqz7jJmALj78pWShX3GU6N3Xi-Jpcd"
+              href="https://github.com/brenobaptista"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="curriculum vitae"
+              aria-label="github"
             >
               <span className="icon is-large fa-2x">
-                <FontAwesomeIcon icon={faAddressCard} />
-              </span>
-            </a>
-            <a
-              href="mailto:brenomb07@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="email"
-            >
-              <span className="icon is-large fa-2x">
-                <FontAwesomeIcon icon={faEnvelope} />
+                <FontAwesomeIcon icon={faGithub} />
               </span>
             </a>
             <a
@@ -87,13 +77,13 @@ const IndexPage = () => {
               </span>
             </a>
             <a
-              href="https://github.com/brenobaptista"
+              href="mailto:brenomb07@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="github"
+              aria-label="email"
             >
               <span className="icon is-large fa-2x">
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faEnvelope} />
               </span>
             </a>
             <a
@@ -122,32 +112,30 @@ const IndexPage = () => {
       <section className="container section content is-size-4-desktop is-size-5-touch">
         <h3 className="title has-text-light">About Me</h3>
         <p className="has-text-justified paragraph">
-          I love studying about Linux (Arch Linux) and programming in general.
+          I love studying about Linux and programming in general.
           I like reading, playing video games and traveling.
-          My favorite series of all times is Friends.
-          I could play the ocarina (I forgot how to play it).
-          I love coffee and spicy food.
-          Every month, I invest in stock market here in Brazil (buy and hold).
+          I could play the ocarina (but I forgot how to play it).
+          I enjoy coffee and spicy food.
+          I was awarded some science olympiads
+          {' '}
+          <a href="https://drive.google.com/open?id=1MvF6eOMCpa7Xs1-Jk2g6WwEycGwC3YN-" target="_blank" rel="noopener noreferrer">medals</a>
+          {' '}
+          and
+          {' '}
+          <a href="https://drive.google.com/open?id=1AEKeTtAQSQzmZx1_TlNAbKO22yAipaml" target="_blank" rel="noopener noreferrer">certificates</a>
+          .
         </p>
         <p className="has-text-justified paragraph">
-          For a year, I worked as a web
-          {' '}
-          <Link to="/stack/">developer</Link>
-          {' '}
-          and as an English teacher. Now, I work as a Full Stack
-          Engineer at The Privacy Police.
+          In the past, I worked as an English teacher.
+          Currently, I work as a full stack engineer at Privacy Pixel.
           I study Computer Science at Unifacvest University Center.
-        </p>
-        <p className="has-text-justified paragraph">
-          I&apos;ve developed some personal
+          I have experience working on projects using
+          Javascript (Node.js, React and React Native),
+          but I am always looking forward working with other technologies.
+          Check out my
           {' '}
-          <Link to="/projects/">projects</Link>
-          {' '}
-          for myself. Also, check out more nice
-          {' '}
-          <Link to="/downloads/">things</Link>
-          {' '}
-          about me!
+          <a href="https://drive.google.com/open?id=1MAAqz7jJmALj78pWShX3GU6N3Xi-Jpcd" target="_blank" rel="noopener noreferrer">curriculum vitae</a>
+          .
         </p>
       </section>
     </Layout>
