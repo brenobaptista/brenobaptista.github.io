@@ -31,13 +31,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-146454458-1',
-        anonymize: true,
-        respectDNT: true,
-      },
-    },
   ],
 };
