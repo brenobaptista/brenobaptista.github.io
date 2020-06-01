@@ -38,8 +38,9 @@ boot (systemctl enable cpupower.service).
 
 ```
 1. Win+D: manjaro-settings-manager
-2. Hardware Configuration
-3. Remove video-hybrid-intel-nvidia-bumblebee and install the appropriate driver for your nvidia card
+2. Hardware Configuration.
+3. Remove video-hybrid-intel-nvidia-bumblebee and install the appropriate
+driver for your nvidia card.
 ```
 
 ## 5. How to Set up a Wi-Fi Hotspot
@@ -54,9 +55,11 @@ Mode: Hotspot
 Type in SSID as you wish (like Mi3 also)
 Choose Device MAC Address from the dropdown like wlan0 (in my case, wlp6s0)
 Wifi Security select "WPA & WPA2 Personal" and set a password.
-Go to IPv4 Settings tab, from Method drop-down box select Shared to other computers.
+Go to IPv4 Settings tab, from Method drop-down box select Shared to
+other computers.
 Then save and close.
-Open Terminal (Ctrl+Alt+T) and type in the following commands with your connection name used in step 5.
+Open Terminal (Ctrl+Alt+T) and type in the following commands with
+your connection name used in step 5.
 
 $ sudo su
 $ cd ../..
@@ -65,6 +68,8 @@ $ vim Mi3.nmconnection
 
 Find mode=infrastructure and change it to mode=ap
 
-Now check the network section where Wi-Fi will be connected to the created hotspot automatically.
-If you can not find it, go to Connect to Hidden Network... Find the connection and connect to it.
+Now check the network section where Wi-Fi will be connected to the created
+hotspot automatically.
+If you can not find it, go to Connect to Hidden Network... Find the connection
+and connect to it.
 ```
