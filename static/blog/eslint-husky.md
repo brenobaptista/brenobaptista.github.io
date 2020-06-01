@@ -1,6 +1,6 @@
 ---
 path: husky-eslint
-date: 2020-06-01T03:40:09.999Z
+date: 2020-06-01T05:40:09.999Z
 title: ESLint + Husky
 description: Guide about integrating Husky and ESLint in your next project
 ---
