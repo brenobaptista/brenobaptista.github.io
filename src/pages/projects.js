@@ -59,11 +59,11 @@ const Projects = ({ data }) => {
       <SEO title="Projects" />
       <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
         <div className="hero-body">
-          <h1 className="title has-text-centered has-text-light">
+          <h1 className="reset title has-text-centered has-text-light">
             Projects
           </h1>
           <hr className="custom-hr2" />
-          <p className="has-text-centered">
+          <p className="reset has-text-centered">
             See more projects on my
             {' '}
             <a href="https://github.com/brenobaptista">GitHub</a>

@@ -20,7 +20,9 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <div>
-        <main>{children}</main>
+        <main>
+          {children}
+        </main>
         <footer className="has-text-centered">
           ©
           {' '}

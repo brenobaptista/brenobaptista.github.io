@@ -7,10 +7,12 @@ const Card = ({ title, subtitle, link, tags, image }) => (
       <div className="card-content">
         <div className="media">
           <div className="media-left">
-            <figure className="image is-96x96">{image}</figure>
+            <figure className="reset image is-96x96">
+              {image}
+            </figure>
           </div>
           <div className="media-content no-scroll">
-            <h4 className="title is-size-5-desktop is-size-6-touch has-text-light">
+            <h4 className="reset title is-size-5-desktop is-size-6-touch has-text-light">
               {title}
             </h4>
             <p className="subtitle is-size-5-desktop is-size-6-touch has-text-light">

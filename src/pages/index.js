@@ -24,7 +24,7 @@ const IndexPage = () => {
             <StaticQuery
               query={graphql`
                 query {
-                  photo: file(relativePath: { eq: "freelancer.png" }) {
+                  photo: file(relativePath: { eq: "profile.png" }) {
                     childImageSharp {
                       fixed(width: 128, height: 128) {
                         ...GatsbyImageSharpFixed
@@ -43,13 +43,14 @@ const IndexPage = () => {
                     padding: '.5rem',
                     borderColor: '#181A1B',
                     backgroundColor: '#181A1B',
+                    boxSizing: 'border-box',
                   }}
                   alt="Breno Baptista"
                 />
               )}
             />
           </figure>
-          <h1 className="title is-1 has-text-centered has-text-light">
+          <h1 className="reset title is-1 has-text-centered has-text-light">
             Breno Baptista
           </h1>
           <h2 className="subtitle is-4 has-text-centered has-text-light">
@@ -110,7 +111,9 @@ const IndexPage = () => {
         </div>
       </section>
       <section className="container section content is-size-4-desktop is-size-5-touch">
-        <h3 className="title has-text-light">About Me</h3>
+        <h3 className="reset title has-text-light">
+          About Me
+        </h3>
         <p className="has-text-justified paragraph">
           I love studying about Linux and programming in general.
           I like reading, playing video games and traveling.

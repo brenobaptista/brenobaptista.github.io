@@ -1,0 +1,47 @@
+.date {
+  font-size: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.description {
+  font-size: 19px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.post-title {
+  color: #ffdd57;
+}
+
+.bio {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.bio p {
+  font-size: 20px;
+  padding-left: 15px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.hr-bio {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.change-post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.change-post li {
+  font-size: 17px;
+}
