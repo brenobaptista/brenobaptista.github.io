@@ -70,6 +70,6 @@ Find mode=infrastructure and change it to mode=ap
 
 Now check the network section where Wi-Fi will be connected to the created
 hotspot automatically.
-If you can not find it, go to Connect to Hidden Network... Find the connection
-and connect to it.
+If you can not find it, go to Connect to Hidden Network... Find the
+connection and connect to it.
 ```
