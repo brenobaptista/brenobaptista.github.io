@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: brenobaptista/brenobaptista.github.io
+  branch: source
 
 media_folder: static/assets
 public_folder: assets
