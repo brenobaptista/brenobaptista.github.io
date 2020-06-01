@@ -1,15 +1,17 @@
 # brenobaptista.github.io
 
-> My personal portfolio website made using Gatsby.
+> My Personal Website / Portfolio and Blog - PWA, Gatsby.js, GitHub Pages, Netlify CMS
 
 ## Features
 
 * Gatsby and all its features.
 * Bulma.
-* gh-pages.
+* Hosted on gh-pages and Netlify.
 * ESLint + Husky.
 * PWA support.
-* 100% Score PageSpeed Insights.
+* Blog.
+* Netlify CMS.
+* Almost 100% Score PageSpeed Insights.
 
 ## Getting Started
 
