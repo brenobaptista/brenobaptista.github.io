@@ -2,7 +2,7 @@
 path: manjaro-i3-troubleshooting
 date: 2020-06-01T02:50:38.704Z
 title: Manjaro i3 Troubleshooting
-description: Troubleshooting problems upon installing Manjaro i3 for the first time.
+description: Troubleshooting problems upon installing Manjaro i3 for the first time
 ---
 ## 1. If You're Always Muted After Reboot
 
