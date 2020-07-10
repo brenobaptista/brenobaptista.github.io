@@ -8,7 +8,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
   }
 }
