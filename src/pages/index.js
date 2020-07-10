@@ -41,8 +41,8 @@ const IndexPage = () => {
                     borderStyle: 'solid',
                     borderWidth: '1px',
                     padding: '.5rem',
-                    borderColor: '#181A1B',
-                    backgroundColor: '#181A1B',
+                    borderColor: '#181a1b',
+                    backgroundColor: '#181a1b',
                     boxSizing: 'border-box',
                   }}
                   alt="Breno Baptista"

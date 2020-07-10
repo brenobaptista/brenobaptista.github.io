@@ -1,15 +1,17 @@
+@import "./theme.scss";
 @import "./blog.scss";
 @import "./card.scss";
 @import "./custom-hr.scss";
-@import "./drawerToggle.scss";
 @import "./etc.scss";
 @import "./fonts.scss";
-@import "./logo.scss";
-@import "./navigationItem.scss";
-@import "./navigationItems.scss";
-@import "./sideDrawer.scss";
-@import "./theme.scss";
-@import "./toolbar.scss";
+@import "./Navbar/backdrop.scss";
+@import "./Navbar/drawerToggle.scss";
+@import "./Navbar/header.scss";
+@import "./Navbar/logo.scss";
+@import "./Navbar/navigationItem.scss";
+@import "./Navbar/navigationItems.scss";
+@import "./Navbar/sideDrawer.scss";
+@import "./Navbar/toolbar.scss";
 
 // To import all of Bulma:
 // @import "~bulma/bulma";

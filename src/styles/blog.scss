@@ -12,19 +12,19 @@
 }
 
 .post-title {
-  color: #ffdd57;
+  color: $link;
 }
 
 .bio {
   display: flex;
   margin-bottom: 20px;
-}
 
-.bio p {
-  font-size: 20px;
-  padding-left: 15px;
-  font-style: italic;
-  color: #ffffff;
+  p {
+    font-size: 20px;
+    padding-left: 15px;
+    font-style: italic;
+    color: #ffffff;
+  }
 }
 
 .hr-bio {
@@ -40,8 +40,8 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
-}
 
-.change-post li {
-  font-size: 17px;
+  li {
+    font-size: 17px;
+  }
 }

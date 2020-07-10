@@ -9,7 +9,6 @@ const navigationItem = (props) => {
     <li className="navigationItem">
       <Link
         to={link}
-        exact
         activeClassName="active"
         onClick={clicked}
       >

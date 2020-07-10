@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from './Header';
+import Header from './Navbar/Header';
 import '../styles/index.scss';
 
 const Layout = ({ children }) => {

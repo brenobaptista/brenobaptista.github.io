@@ -6,15 +6,18 @@
   left: 0;
   top: 0;
   z-index: 200;
-  background-color: #181a1b;
+  background-color: $body-background-color;
   padding: 32px 16px;
   box-sizing: border-box;
   transition: transform 0.3s ease-out;
-}
 
-@media (min-width: 500px) {
-  .sideDrawer {
+  @media (min-width: 500px) {
     display: none;
+  }
+
+  .logoSideDrawer {
+    height: 13%;
+    margin-bottom: 32px;
   }
 }
 
@@ -24,9 +27,4 @@
 
 .close {
   transform: translate(-100%)
-}
-
-.logoSideDrawer {
-  height: 13%;
-  margin-bottom: 32px;
 }

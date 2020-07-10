@@ -8,16 +8,14 @@
   padding: 10px 0;
   box-sizing: border-box;
   cursor: pointer;
-}
 
-.drawerToggle div {
-  width: 70%;
-  height: 2px;
-  background-color: white;
-}
+  div {
+    width: 70%;
+    height: 2px;
+    background-color: #ffffff;
+  }
 
-@media (min-width: 500px) {
-  .drawerToggle {
+  @media (min-width: 500px) {
     display: none;
   }
 }
