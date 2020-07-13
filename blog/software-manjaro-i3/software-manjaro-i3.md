@@ -35,10 +35,19 @@ Set my dotfiles repository
 BTW, check the dotfiles [here](https://github.com/brenobaptista/dotfiles).
 
 ```
-Install Dracula Theme
-Install Material Icon Theme
-Install Fira Code
-Install ESLint
+Install these extensions (then use Settings Sync extension):
+Settings Sync
+Dracula Theme
+Material Icon Theme
+Fira Code
+ESLint
+DotENV
+Auto Rename Tag
+Bracket Pair Colorizer 2
+Docker
+GitLens
+Markdown All in One
+TabNine
 
 {
     "workbench.colorTheme": "Dracula",
