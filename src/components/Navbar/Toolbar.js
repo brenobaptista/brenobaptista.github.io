@@ -1,32 +1,28 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import Logo from './Logo';
-import NavigationItems from './NavigationItems';
-import DrawerToggle from './DrawerToggle';
+import Logo from './Logo'
+import NavigationItems from './NavigationItems'
+import DrawerToggle from './DrawerToggle'
 
-const toolbar = (props) => {
-  const { drawerToggleClicked } = props;
+const Toolbar = ({ drawerToggleClicked }) => (
+  <header className='toolbar'>
+    <DrawerToggle clicked={drawerToggleClicked} />
+    <div className='logoToolbar'>
+      <Logo />
+    </div>
+    <nav className='desktopOnly'>
+      <NavigationItems />
+    </nav>
+  </header>
+)
 
-  return (
-    <header className="toolbar">
-      <DrawerToggle clicked={drawerToggleClicked} />
-      <div className="logoToolbar">
-        <Logo />
-      </div>
-      <nav className="desktopOnly">
-        <NavigationItems />
-      </nav>
-    </header>
-  );
-};
-
-toolbar.propTypes = {
+Toolbar.propTypes = {
   drawerToggleClicked: PropTypes.func,
-};
+}
 
-toolbar.defaultProps = {
+Toolbar.defaultProps = {
   drawerToggleClicked: () => {},
-};
+}
 
-export default toolbar;
+export default Toolbar

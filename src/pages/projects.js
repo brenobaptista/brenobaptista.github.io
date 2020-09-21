@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import '../../node_modules/aos/dist/aos.css';
-import AOS from 'aos';
+import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import AOS from 'aos'
+import '../../node_modules/aos/dist/aos.css'
 
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import Card from '../components/Card';
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import Card from '../components/Card'
 
 export const queryImage = graphql`
   query {
@@ -47,37 +47,39 @@ export const queryImage = graphql`
       }
     }
   }
-`;
+`
 
 const Projects = ({ data }) => {
   useEffect(() => {
-    AOS.init();
-  });
+    AOS.init()
+  })
 
   return (
     <Layout>
-      <SEO title="Projects" />
-      <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
-        <div className="hero-body">
-          <h1 className="reset title has-text-centered has-text-light">
+      <SEO title='Projects' />
+      <section className='hero custom-hero is-size-4-desktop is-size-5-touch'>
+        <div className='hero-body'>
+          <h1 className='reset title has-text-centered has-text-light'>
             Projects
           </h1>
-          <hr className="custom-hr2" />
-          <p className="reset has-text-centered">
+          <hr className='custom-hr2' />
+          <p className='reset has-text-centered'>
             See more projects on my
             {' '}
-            <a href="https://github.com/brenobaptista">GitHub</a>
+            <a href='https://github.com/brenobaptista'>
+              GitHub
+            </a>
           </p>
         </div>
       </section>
-      <section className="section is-size-4-desktop is-size-5-touch">
-        <div className="columns is-centered">
-          <div className="column is-half">
-            <div data-aos="zoom-in-up">
+      <section className='section is-size-4-desktop is-size-5-touch'>
+        <div className='columns is-centered'>
+          <div className='column is-half'>
+            <div data-aos='zoom-in-up'>
               <Card
-                title="Pomodoro"
-                subtitle="Pomodoro App (iOS and Android)"
-                link="https://github.com/brenobaptista/pomodoro-react-native"
+                title='Pomodoro'
+                subtitle='Pomodoro App (iOS and Android)'
+                link='https://github.com/brenobaptista/pomodoro-react-native'
                 tags={['React Native', 'Redux', 'Unit Testing']}
                 image={(
                   <Img
@@ -85,16 +87,16 @@ const Projects = ({ data }) => {
                     imgStyle={{
                       borderRadius: '10%',
                     }}
-                    alt="pomodoro"
+                    alt='pomodoro'
                   />
                 )}
               />
             </div>
-            <div data-aos="zoom-in-up">
+            <div data-aos='zoom-in-up'>
               <Card
-                title="Spectacles Finances"
-                subtitle="My Personal Finance App (iOS and Android)"
-                link="https://github.com/brenobaptista/spectacles-finances-react-native"
+                title='Spectacles Finances'
+                subtitle='My Personal Finance App (iOS and Android)'
+                link='https://github.com/brenobaptista/spectacles-finances-react-native'
                 tags={['React Native', 'Firebase', 'Expo']}
                 image={(
                   <Img
@@ -102,16 +104,16 @@ const Projects = ({ data }) => {
                     imgStyle={{
                       borderRadius: '10%',
                     }}
-                    alt="spectacles"
+                    alt='spectacles'
                   />
                 )}
               />
             </div>
-            <div data-aos="zoom-in-up">
+            <div data-aos='zoom-in-up'>
               <Card
-                title="iOS Calculator"
-                subtitle="iOS Calculator clone (iOS and Android)"
-                link="https://github.com/brenobaptista/ios-calculator-react-native"
+                title='iOS Calculator'
+                subtitle='iOS Calculator clone (iOS and Android)'
+                link='https://github.com/brenobaptista/ios-calculator-react-native'
                 tags={['React Native', 'Expo', 'iOS Design']}
                 image={(
                   <Img
@@ -119,16 +121,16 @@ const Projects = ({ data }) => {
                     imgStyle={{
                       borderRadius: '10%',
                     }}
-                    alt="calculator"
+                    alt='calculator'
                   />
                 )}
               />
             </div>
-            <div data-aos="zoom-in-up">
+            <div data-aos='zoom-in-up'>
               <Card
-                title="LibreTutors"
-                subtitle="LibreTutors - Connecting Tutors and Pupils"
-                link="https://github.com/brenobaptista/libretutors-react-native"
+                title='LibreTutors'
+                subtitle='LibreTutors - Connecting Tutors and Pupils'
+                link='https://github.com/brenobaptista/libretutors-react-native'
                 tags={['Full Stack', 'Node', 'React Native', 'Maps']}
                 image={(
                   <Img
@@ -136,16 +138,16 @@ const Projects = ({ data }) => {
                     imgStyle={{
                       borderRadius: '10%',
                     }}
-                    alt="libretutors"
+                    alt='libretutors'
                   />
                 )}
               />
             </div>
-            <div data-aos="zoom-in-up">
+            <div data-aos='zoom-in-up'>
               <Card
-                title="Aeon Planner"
-                subtitle="Personal Planner React PWA"
-                link="https://aeonplanner.netlify.com/"
+                title='Aeon Planner'
+                subtitle='Personal Planner React PWA'
+                link='https://aeonplanner.netlify.com/'
                 tags={['PWA', 'React', 'Redux', 'Node', 'Full Stack']}
                 image={(
                   <Img
@@ -153,7 +155,7 @@ const Projects = ({ data }) => {
                     imgStyle={{
                       borderRadius: '10%',
                     }}
-                    alt="aeon"
+                    alt='aeon'
                   />
                 )}
               />
@@ -162,11 +164,11 @@ const Projects = ({ data }) => {
         </div>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
 Projects.propTypes = {
   data: PropTypes.object.isRequired,
-};
+}
 
-export default Projects;
+export default Projects

@@ -1,16 +1,11 @@
 {
-  "extends": "airbnb",
-  "parser": "babel-eslint",
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": [
-          "src"
-        ]
-      }
-    }
+  "globals": {
+    "__PATH_PREFIX__": true
   },
+  "extends": ["react-app", "airbnb", "airbnb/hooks"],
   "rules": {
+    "semi": ["error", "never"],
+    "jsx-quotes": ["error", "prefer-single"],
     "max-len": [
       "error",
       {
@@ -20,20 +15,9 @@
         "ignoreTemplateLiterals": true
       }
     ],
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
-    ],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
     "react/forbid-prop-types": "off",
-    "react/state-in-constructor": [
-      "off",
-      "never"
-    ],
+    "react/state-in-constructor": ["off","never"],
     "object-curly-newline": [
       "error",
       {

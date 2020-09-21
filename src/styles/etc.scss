@@ -18,8 +18,13 @@ pre code {
   font-size: 0.8em !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #F5F5F5;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f5f5f5;
 }
 
 .reset {
@@ -37,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .custom-hero {
   background-color: #1b1d1e;
-  background-image: url("../images/noise.png");
+  background-image: url('../images/noise.png');
   border-style: solid;
   border-width: 1px 0 1px 0;
   border-color: $card-background-color;

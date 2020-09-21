@@ -4,14 +4,14 @@
 
 ## Features
 
-* Gatsby and all its features.
-* Bulma.
-* Hosted on gh-pages and Netlify.
-* ESLint + Husky.
-* PWA support.
-* Blog.
-* Netlify CMS.
-* Almost 100% Score PageSpeed Insights.
+- Gatsby and all its features.
+- Bulma.
+- Hosted on gh-pages and Netlify.
+- ESLint + Prettier + Husky + Lint Staged.
+- PWA support.
+- Blog.
+- Netlify CMS.
+- Almost 100% Score PageSpeed Insights.
 
 ## Getting Started
 
@@ -29,8 +29,8 @@ $ yarn deploy
 ## Author
 
 | [![brenobaptista](https://avatars1.githubusercontent.com/u/47641641?s=120&v=4)](https://github.com/brenobaptista) |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Breno Baptista](https://github.com/brenobaptista) |
+| ----------------------------------------------------------------------------------------------------------------- |
+| [Breno Baptista](https://github.com/brenobaptista)                                                                |
 
 ## License
 

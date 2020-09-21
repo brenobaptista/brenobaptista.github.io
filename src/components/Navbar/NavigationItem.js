@@ -1,33 +1,29 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
+import React from 'react'
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
 
-const navigationItem = (props) => {
-  const { link, clicked, children } = props;
+const NavigationItem = ({ link, clicked, children }) => (
+  <li className='navigationItem'>
+    <Link
+      to={link}
+      activeClassName='active'
+      onClick={clicked}
+    >
+      {children}
+    </Link>
+  </li>
+)
 
-  return (
-    <li className="navigationItem">
-      <Link
-        to={link}
-        activeClassName="active"
-        onClick={clicked}
-      >
-        {children}
-      </Link>
-    </li>
-  );
-};
-
-navigationItem.propTypes = {
+NavigationItem.propTypes = {
   link: PropTypes.string,
   clicked: PropTypes.func,
   children: PropTypes.node,
-};
+}
 
-navigationItem.defaultProps = {
+NavigationItem.defaultProps = {
   link: '',
   clicked: () => {},
   children: '',
-};
+}
 
-export default navigationItem;
+export default NavigationItem

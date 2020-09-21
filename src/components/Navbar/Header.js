@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
-import Toolbar from './Toolbar';
-import SideDrawer from './SideDrawer';
+import Toolbar from './Toolbar'
+import SideDrawer from './SideDrawer'
 
-const layout = (props) => {
-  const [showSideDrawer, setShowSideDrawer] = useState(false);
-
-  const { children } = props;
+const Layout = ({ children }) => {
+  const [showSideDrawer, setShowSideDrawer] = useState(false)
 
   return (
     <>
@@ -16,19 +14,19 @@ const layout = (props) => {
         open={showSideDrawer}
         closed={() => setShowSideDrawer(false)}
       />
-      <main className="content">
+      <main className='content'>
         {children}
       </main>
     </>
-  );
-};
+  )
+}
 
-layout.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node,
-};
+}
 
-layout.defaultProps = {
+Layout.defaultProps = {
   children: '',
-};
+}
 
-export default layout;
+export default Layout

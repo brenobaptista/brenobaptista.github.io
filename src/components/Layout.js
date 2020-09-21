@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from './Navbar/Header';
-import '../styles/index.scss';
+import Header from './Navbar/Header'
+import '../styles/index.scss'
 
 const Layout = ({ children }) => {
   useStaticQuery(graphql`
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <>
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
         <main>
           {children}
         </main>
-        <footer className="has-text-centered">
+        <footer className='has-text-centered'>
           ©
           {' '}
           {new Date().getFullYear()}
@@ -32,11 +32,11 @@ const Layout = ({ children }) => {
         </footer>
       </div>
     </>
-  );
-};
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout

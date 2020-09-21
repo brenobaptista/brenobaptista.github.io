@@ -4,6 +4,7 @@ date: 2020-06-01T04:50:38.704Z
 title: Manjaro i3
 description: To Do List for Setting up Manjaro i3
 ---
+
 ## Useful Software
 
 This is a list of software I first install:

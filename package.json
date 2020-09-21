@@ -44,13 +44,16 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "eslint": "^6.2.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-react-app": "^5.2.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "gh-pages": "^2.2.0",
-    "husky": "4.2.5"
+    "husky": "4.2.5",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2"
   },
   "homepage": "https://github.com/brenobaptista/brenobaptista.github.io#readme",
   "keywords": [
@@ -63,7 +66,9 @@
     "sass",
     "prop-types",
     "eslint",
-    "husky"
+    "prettier",
+    "husky",
+    "lint-staged"
   ],
   "license": "MIT",
   "main": "n/a",
@@ -74,15 +79,9 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "lint": "eslint src/",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "deploy": "gatsby clean && gatsby build && gh-pages -d public -b master"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "eslint src/"
-    }
   }
 }
