@@ -4,10 +4,11 @@ date: 2020-06-01T02:50:38.704Z
 title: Manjaro i3 Troubleshooting
 description: Troubleshooting problems upon installing Manjaro i3 for the first time
 ---
+
 ## 1. If You're Always Muted After Reboot
 
 ```sh
-# Uninstall pulseaudio and all its dependencies: 
+# Uninstall pulseaudio and all its dependencies:
 $ sudo pacman -R pavucontrol pulseaudio pulseaudio-alsa
 $ sudo pacman -Rns manjaro-pulse
 $ sudo pacman -Rns pulseaudio-ctl
@@ -21,7 +22,7 @@ $ sudo pacman -S manjaro-alsa pulseaudio-alsa --needed
 ```
 1. Install numlockx.
 2. Add this to ~/.i3/config (dot files are hidden on pcmanfm, so
-right mouse button -> Show Hidden): 
+right mouse button -> Show Hidden):
 exec_always --no-startup-id numlockx (there's a special section
 full of "exec_aways ..." so you can put it there)
 ```
@@ -30,7 +31,7 @@ full of "exec_aways ..." so you can put it there)
 
 ```
 The configuration file for cpupower is located in /etc/default/cpupower.
-Set governor='performance'. Then, enable cpupower.service to start at 
+Set governor='performance'. Then, enable cpupower.service to start at
 boot (systemctl enable cpupower.service).
 ```
 

@@ -4,6 +4,7 @@ date: 2020-06-01T04:50:38.704Z
 title: Manjaro i3
 description: To Do List for Setting up Manjaro i3
 ---
+
 ## Useful Software
 
 This is a list of software I first install:
@@ -35,19 +36,10 @@ Set my dotfiles repository
 BTW, check the dotfiles [here](https://github.com/brenobaptista/dotfiles).
 
 ```
-Install these extensions (then use Settings Sync extension):
-Settings Sync
-Dracula Theme
-Material Icon Theme
-Fira Code
-ESLint
-DotENV
-Auto Rename Tag
-Bracket Pair Colorizer 2
-Docker
-GitLens
-Markdown All in One
-TabNine
+Install Dracula Theme
+Install Material Icon Theme
+Install Fira Code
+Install ESLint
 
 {
     "workbench.colorTheme": "Dracula",
