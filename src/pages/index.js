@@ -54,7 +54,7 @@ const IndexPage = () => {
             Breno Baptista
           </h1>
           <h2 className='subtitle is-4 has-text-centered has-text-light'>
-            Full Stack Engineer
+            Full Stack Developer
           </h2>
           <div className='has-text-centered'>
             <a
@@ -142,15 +142,15 @@ const IndexPage = () => {
         </p>
         <p className='has-text-justified paragraph'>
           In the past, I worked as an English teacher.
-          Currently, I work as a full stack engineer at Privacy Pixel.
+          Currently, I work as a junior software engineer at Massive.
           I study Computer Science at Unifacvest University Center.
           I have experience working on projects using
           Javascript (Node.js, React and React Native),
-          but I am always looking forward working with other technologies.
+          but I look forward to working with other technologies.
           Check out my
           {' '}
           <a
-            href='https://drive.google.com/open?id=1MAAqz7jJmALj78pWShX3GU6N3Xi-Jpcd'
+            href='https://drive.google.com/file/d/1F-_l51BDIBZrHdx8KyEEgQ7UEcImY_o2/view'
             target='_blank'
             rel='noopener noreferrer'
           >
