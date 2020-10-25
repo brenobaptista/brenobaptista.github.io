@@ -11,7 +11,8 @@
 - PWA support.
 - Blog.
 - Netlify CMS.
-- Almost 100% Score PageSpeed Insights.
+- 100% Score PageSpeed Insights.
+- Jest and React Testing Library
 
 ## Getting Started
 
