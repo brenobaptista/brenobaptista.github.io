@@ -84,8 +84,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "yarn develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
     "test": "jest",
     "test:coverage": "yarn test -- --coverage --watchAll=false",
