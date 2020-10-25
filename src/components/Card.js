@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Card = ({
-  title, subtitle, link, tags, image
-}) => (
+const Card = ({ title, subtitle, link, tags, image }) => (
   <a
     href={link}
     target='_blank'
@@ -25,7 +23,7 @@ const Card = ({
               {subtitle}
             </p>
             <div className='tags'>
-              {tags.map(tag => (
+              {tags.map((tag) => (
                 <span className='tag' key={tag}>
                   {tag}
                 </span>
@@ -43,13 +41,13 @@ Card.propTypes = {
   subtitle: PropTypes.string.isRequired,
   link: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string),
-  image: PropTypes.node
+  image: PropTypes.node,
 }
 
 Card.defaultProps = {
   link: null,
   tags: [],
-  image: null
+  image: null,
 }
 
 export default Card

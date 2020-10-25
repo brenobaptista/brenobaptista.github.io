@@ -17,11 +17,11 @@ const DrawerToggle = ({ clicked }) => (
 )
 
 DrawerToggle.propTypes = {
-  clicked: PropTypes.func
+  clicked: PropTypes.func,
 }
 
 DrawerToggle.defaultProps = {
-  clicked: () => {}
+  clicked: () => {},
 }
 
 export default DrawerToggle

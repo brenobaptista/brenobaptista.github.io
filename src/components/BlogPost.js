@@ -84,7 +84,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
 BlogPostTemplate.propTypes = {
   data: PropTypes.object.isRequired,
-  pageContext: PropTypes.object.isRequired
+  pageContext: PropTypes.object.isRequired,
 }
 
 export default BlogPostTemplate

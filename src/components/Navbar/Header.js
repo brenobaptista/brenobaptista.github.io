@@ -22,11 +22,11 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 }
 
 Layout.defaultProps = {
-  children: ''
+  children: '',
 }
 
 export default Layout

@@ -2,9 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
-const Card = ({
-  key, title, description, date, link
-}) => (
+const Card = ({ key, title, description, date, link }) => (
   <div key={key}>
     <Link to={link}>
       <div className='card'>
@@ -33,11 +31,11 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  link: PropTypes.string
+  link: PropTypes.string,
 }
 
 Card.defaultProps = {
-  link: null
+  link: null,
 }
 
 export default Card

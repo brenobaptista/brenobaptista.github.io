@@ -2,9 +2,7 @@ import React, { useEffect } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faGithub, faLinkedin, faInstagram, faWhatsapp
-} from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import AOS from 'aos'
 import '../../node_modules/aos/dist/aos.css'
@@ -35,7 +33,7 @@ const IndexPage = () => {
                   }
                 }
               `}
-              render={data => (
+              render={(data) => (
                 <Img
                   fixed={data.photo.childImageSharp.fixed}
                   imgStyle={{
@@ -45,7 +43,7 @@ const IndexPage = () => {
                     padding: '.5rem',
                     borderColor: '#181a1b',
                     backgroundColor: '#181a1b',
-                    boxSizing: 'border-box'
+                    boxSizing: 'border-box',
                   }}
                   alt='Breno Baptista'
                 />
