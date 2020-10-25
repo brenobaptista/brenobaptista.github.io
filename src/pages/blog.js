@@ -59,7 +59,7 @@ const Blog = ({ data }) => {
                       title={title}
                       description={node.frontmatter.description || node.excerpt}
                       date={node.frontmatter.date}
-                      link={`blog${node.fields.slug}`}
+                      link={`../blog${node.fields.slug}`}
                     />
                   </div>
                 )
