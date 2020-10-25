@@ -3,7 +3,7 @@ module.exports = {
     title: 'Breno Baptista',
     description: 'This website is the portfolio of the web developer Breno Baptista',
     author: 'Breno Baptista',
-    siteUrl: 'https://brenobaptista.github.io',
+    siteUrl: 'https://brenobaptista.github.io'
   },
   plugins: [
     'gatsby-plugin-netlify-cms',
@@ -16,40 +16,40 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
-            },
+              wrapperStyle: 'margin-bottom: 1.0725rem'
+            }
           },
           {
-            resolve: 'gatsby-remark-vscode',
+            resolve: 'gatsby-remark-vscode'
           },
           {
-            resolve: 'gatsby-remark-copy-linked-files',
+            resolve: 'gatsby-remark-copy-linked-files'
           },
           {
-            resolve: 'gatsby-remark-smartypants',
-          },
-        ],
-      },
+            resolve: 'gatsby-remark-smartypants'
+          }
+        ]
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'blog',
-        path: `${__dirname}/static/blog`,
-      },
+        path: `${__dirname}/static/blog`
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
@@ -65,8 +65,8 @@ module.exports = {
         background_color: '#ffdd57',
         theme_color: '#ffdd57',
         display: 'standalone',
-        icon: 'src/images/favicon.png',
-      },
+        icon: 'src/images/favicon.png'
+      }
     },
     'gatsby-plugin-offline',
     {
@@ -74,8 +74,8 @@ module.exports = {
       options: {
         trackingId: 'UA-146454458-1',
         anonymize: true,
-        respectDNT: true,
-      },
-    },
-  ],
+        respectDNT: true
+      }
+    }
+  ]
 }

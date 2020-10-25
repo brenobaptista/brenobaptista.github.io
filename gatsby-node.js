@@ -24,8 +24,8 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `,
-  ).then((result) => {
+    `
+  ).then(result => {
     if (result.errors) {
       throw result.errors
     }
@@ -42,8 +42,8 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           slug: post.node.fields.slug,
           previous,
-          next,
-        },
+          next
+        }
       })
     })
 
@@ -56,12 +56,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === 'Mdx') {
     const value = createFilePath({
-      node, getNode,
+      node, getNode
     })
     createNodeField({
       name: 'slug',
       node,
-      value,
+      value
     })
   }
 }
