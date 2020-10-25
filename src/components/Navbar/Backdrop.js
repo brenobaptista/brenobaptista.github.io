@@ -16,12 +16,12 @@ const Backdrop = ({ show, clicked }) => (
 
 Backdrop.propTypes = {
   show: PropTypes.bool,
-  clicked: PropTypes.func,
+  clicked: PropTypes.func
 }
 
 Backdrop.defaultProps = {
   show: false,
-  clicked: () => {},
+  clicked: () => {}
 }
 
 export default Backdrop

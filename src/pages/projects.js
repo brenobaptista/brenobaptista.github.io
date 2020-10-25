@@ -85,7 +85,7 @@ const Projects = ({ data }) => {
                   <Img
                     fixed={data.pomodoro.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: '10%',
+                      borderRadius: '10%'
                     }}
                     alt='pomodoro'
                   />
@@ -102,7 +102,7 @@ const Projects = ({ data }) => {
                   <Img
                     fixed={data.spectacles.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: '10%',
+                      borderRadius: '10%'
                     }}
                     alt='spectacles'
                   />
@@ -119,7 +119,7 @@ const Projects = ({ data }) => {
                   <Img
                     fixed={data.calculator.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: '10%',
+                      borderRadius: '10%'
                     }}
                     alt='calculator'
                   />
@@ -136,7 +136,7 @@ const Projects = ({ data }) => {
                   <Img
                     fixed={data.libretutors.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: '10%',
+                      borderRadius: '10%'
                     }}
                     alt='libretutors'
                   />
@@ -153,7 +153,7 @@ const Projects = ({ data }) => {
                   <Img
                     fixed={data.aeon.childImageSharp.fixed}
                     imgStyle={{
-                      borderRadius: '10%',
+                      borderRadius: '10%'
                     }}
                     alt='aeon'
                   />
@@ -168,7 +168,7 @@ const Projects = ({ data }) => {
 }
 
 Projects.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 }
 
 export default Projects
