@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Toolbar from './Toolbar'
 import SideDrawer from './SideDrawer'
 
-const Layout = ({ children }) => {
+const Header = ({ children }) => {
   const [showSideDrawer, setShowSideDrawer] = useState(false)
 
   return (
@@ -21,12 +21,12 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
+Header.propTypes = {
   children: PropTypes.node
 }
 
-Layout.defaultProps = {
+Header.defaultProps = {
   children: ''
 }
 
-export default Layout
+export default Header
