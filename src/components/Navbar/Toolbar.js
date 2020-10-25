@@ -18,11 +18,11 @@ const Toolbar = ({ drawerToggleClicked }) => (
 )
 
 Toolbar.propTypes = {
-  drawerToggleClicked: PropTypes.func,
+  drawerToggleClicked: PropTypes.func
 }
 
 Toolbar.defaultProps = {
-  drawerToggleClicked: () => {},
+  drawerToggleClicked: () => {}
 }
 
 export default Toolbar

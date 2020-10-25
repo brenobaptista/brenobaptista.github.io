@@ -22,7 +22,7 @@ const bioQuery = graphql`
 const Bio = () => (
   <StaticQuery
     query={bioQuery}
-    render={(data) => {
+    render={data => {
       const { author } = data.site.siteMetadata
       return (
         <div className='bio'>
@@ -33,10 +33,10 @@ const Bio = () => (
               marginTop: 20,
               marginBottom: 0,
               minWidth: 50,
-              borderRadius: '100%',
+              borderRadius: '100%'
             }}
             imgStyle={{
-              borderRadius: '50%',
+              borderRadius: '50%'
             }}
           />
           <p>

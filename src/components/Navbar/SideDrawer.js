@@ -32,12 +32,12 @@ const SideDrawer = ({ open, closed }) => {
 
 SideDrawer.propTypes = {
   open: PropTypes.bool,
-  closed: PropTypes.func,
+  closed: PropTypes.func
 }
 
 SideDrawer.defaultProps = {
   open: false,
-  closed: () => { },
+  closed: () => {}
 }
 
 export default SideDrawer

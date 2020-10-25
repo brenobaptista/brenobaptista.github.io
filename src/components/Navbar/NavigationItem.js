@@ -17,13 +17,13 @@ const NavigationItem = ({ link, clicked, children }) => (
 NavigationItem.propTypes = {
   link: PropTypes.string,
   clicked: PropTypes.func,
-  children: PropTypes.node,
+  children: PropTypes.node
 }
 
 NavigationItem.defaultProps = {
   link: '',
   clicked: () => {},
-  children: '',
+  children: ''
 }
 
 export default NavigationItem
